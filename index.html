@@ -3867,21 +3867,5 @@ body {
 }
 
 </style>
-<script>
-function unlock(){
-  const pw = document.getElementById("pwInput").value;
-  if(pw === "1931"){
-    localStorage.setItem("unlock","1");
-    document.getElementById("lockScreen").style.display = "none";
-  } else {
-    alert("비밀번호 틀림");
-  }
-}
-
-if(localStorage.getItem("unlock") === "1"){
-  window.addEventListener("DOMContentLoaded", ()=>{
-    document.getElementById("lockScreen").style.display = "none";
-  });
-}
-</script></body>
+</body>
 </html>
